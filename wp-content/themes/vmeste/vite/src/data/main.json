@@ -1,0 +1,29 @@
+{
+    "template": "layouts/main.njk",
+    "menu": [
+        {
+            "item": "Среда",
+            "submenu": []
+        },
+        {
+            "item": "Брачное агентство",
+            "submenu": []
+        },
+        {
+            "item": "События",
+            "submenu": []
+        },
+        {
+            "item": "Резиденты клуба",
+            "submenu": []
+        },
+        {
+            "item": "Смыслы",
+            "submenu": []
+        },
+        {
+            "item": "Связь с нами",
+            "submenu": []
+        }
+    ]
+}

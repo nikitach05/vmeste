@@ -1,0 +1,451 @@
+{% set title = "Home page" %}
+{% extends "layouts/main.njk" %}
+
+{% block content %}
+
+<main class="main" style="background-image: url('/src/assets/img/image.webp');">
+    <div class="main__container container">
+        <div class="main__content">
+            <div class="main__under-title">Интеллектуальная среда &Брачное агентство</div>
+            <h1 class="main__title"><span class="main__title-text">ДАВАЙ ВМЕСТЕ</span></h1>
+            <div class="main__description"><span>Ценностный фундамент</span> семьи и отношений</div>
+            <ul class="main__list">
+                <li class="main__list-item">Формируем окружение под ваши ценности</li>
+                <li class="main__list-item">Организуем интересные события и интеллектуальный досуг</li>
+                <li class="main__list-item">Создаём условия для искреннего общения</li>
+                <li class="main__list-item">Помогаем найти близких по духу людей</li>
+            </ul>
+            <div class="main__buttons">
+                <button class="btn btn--primary" type="button" data-modal="order-modal">Присоединиться</button>
+                <button class="btn btn--trans">Погрузиться в контекст</button>
+            </div>
+        </div>
+        
+        <div class="main__clients">
+            <div class="main__clients-item">
+                <img class="main__clients-img" src="/src/assets/img/clients/logo1.svg" loading="lazy" alt="">
+            </div>
+            <div class="main__clients-item">
+                <img class="main__clients-img" src="/src/assets/img/clients/logo2.png" loading="lazy" alt="">
+            </div>
+            <div class="main__clients-item">
+                <img class="main__clients-img" src="/src/assets/img/clients/logo3.png" loading="lazy" alt="">
+            </div>
+            <div class="main__clients-item">
+                <img class="main__clients-img" src="/src/assets/img/clients/logo4.svg" loading="lazy" alt="">
+            </div>
+            <div class="main__clients-item">
+                <img class="main__clients-img" src="/src/assets/img/clients/logo5.svg" loading="lazy" alt="">
+            </div>
+            <div class="main__clients-item">
+                <img class="main__clients-img" src="/src/assets/img/clients/logo6.svg" loading="lazy" alt="">
+            </div>
+            <div class="main__clients-item">
+                <img class="main__clients-img" src="/src/assets/img/clients/logo7.svg" loading="lazy" alt="">
+            </div>
+            <div class="main__clients-item">
+                <img class="main__clients-img" src="/src/assets/img/clients/logo8.png" loading="lazy" alt="">
+            </div>
+            <div class="main__clients-item">
+                <img class="main__clients-img" src="/src/assets/img/clients/logo9.svg" loading="lazy" alt="">
+            </div>
+            <div class="main__clients-item">
+                <img class="main__clients-img" src="/src/assets/img/clients/logo10.svg" loading="lazy" alt="">
+            </div>
+            <div class="main__clients-item">
+                <img class="main__clients-img" src="/src/assets/img/clients/logo9.svg" loading="lazy" alt="">
+            </div>
+            <div class="main__clients-item">
+                <img class="main__clients-img" src="/src/assets/img/clients/logo1.svg" loading="lazy" alt="">
+            </div>
+            <div class="main__clients-item">
+                <img class="main__clients-img" src="/src/assets/img/clients/logo2.png" loading="lazy" alt="">
+            </div>
+        </div>
+    </div>
+</main>
+
+<section class="for-whom p-indent" style="background-image: url('/src/assets/img/image.webp');">
+    <div class="for-whom__container container">
+        <div class="for-whom__content">
+            <div class="for-whom__under-title under-title">{Кому подойдёт}</div>
+            <h2 class="for-whom__title title">Для того, кто исключает случайность</h2>
+            <div class="for-whom__description">Контекст для создания семьи в атмосфере безусловного принятия и доверия. <strong>Мы берем на себя фильтрацию среды, чтобы вы могли быть собой среди равных.</strong></div>
+        </div>
+    </div>
+</section>
+
+<section class="formats pt-indent">
+    <div class="container">
+        <div class="formats__header">
+            <div class="formats__under-title under-title">{Форматы}</div>
+            <h2 class="formats__title title">Экосистема осмысленных отношений</h2>
+            <div class="formats__description f18-20">Единый контекст — два уровня погружения</div>
+        </div>
+
+        <div class="formats__grid">
+            <article class="formats__card">
+                <div class="formats__media">
+                    <img src="/src/assets/img/image2.webp" alt="">
+                </div>
+                <div class="formats__body">
+                    <h3 class="formats__card-title">Селективная среда</h3>
+                    <p class="formats__card-text">Сообщество, в котором синергия ценностей становится основой глубоких связей</p>
+                    <ul class="formats__list">
+                        <li>живые клубные встречи в культурном контексте</li>
+                        <li>подбор качественного окружения</li>
+                        <li>герметичное и модерируемое пространство</li>
+                        <li>единомыслие и взаимопонимание</li>
+                    </ul>
+                    <button class="btn btn--primary formats__btn" type="button">Стать частью сообщества</button>
+                </div>
+            </article>
+
+            <article class="formats__card formats__card--agency">
+                <div class="formats__card-bg" style="background-image: url('/src/assets/img/image4.webp');"></div>
+                <div class="formats__media">
+                    <img src="/src/assets/img/image3.webp" alt="">
+                </div>
+                <div class="formats__body">
+                    <h3 class="formats__card-title">Брачное агентство</h3>
+                    <p class="formats__card-text">Сопровождение на всех этапах к осознанному построению семьи</p>
+                    <ul class="formats__list">
+                        <li>точность в подборе партнёра</li>
+                        <li>стратегическое создание семейного наследия</li>
+                        <li>ценностный отбор и верификация</li>
+                        <li>конфиденциальность и взаимное уважение</li>
+                    </ul>
+                    <button class="btn btn--primary formats__btn" type="button">Записаться на встречу</button>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="for-you p-indent">
+    <div class="container">
+        <div class="for-you__layout">
+            <div class="for-you__under-title under-title">{Это для вас}</div>
+            <div class="for-you__main">
+                <h2 class="for-you__title title">На чём построен проект<br>«Давай вместе»</h2>
+                <div class="for-you__grid">
+                    <div class="for-you__item">
+                        <h3 class="for-you__item-title">Внимание к личности</h3>
+                        <p class="for-you__item-text">психологический подход, рефлексия и осознанность</p>
+                    </div>
+                    <div class="for-you__item">
+                        <h3 class="for-you__item-title">Создание семьи</h3>
+                        <p class="for-you__item-text">династический фундамент и долгосрочное наследие</p>
+                    </div>
+                    <div class="for-you__item">
+                        <h3 class="for-you__item-title">Ценностный подбор</h3>
+                        <p class="for-you__item-text">среда равных по масштабу, этике и жизненным смыслам</p>
+                    </div>
+                    <div class="for-you__item">
+                        <h3 class="for-you__item-title">Селективное сообщество</h3>
+                        <p class="for-you__item-text">люди с общими ценностями в едином контексте</p>
+                    </div>
+                </div>
+            </div>
+            <div class="for-you__media">
+                <img src="/src/assets/img/image5.webp" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="founder p-indent">
+    <div class="container">
+        <div class="founder__layout">
+            <div class="founder__main">
+                <h2 class="founder__title"><span>Основатель</span> <span>проекта</span></h2>
+                <div class="founder__photo">
+                    <img src="/src/assets/img/image6.webp" alt="Елена Барвина">
+                </div>
+                <div class="founder__intro">
+                    <h3 class="founder__name">Елена Барвина</h3>
+                    <p class="founder__role">Ваш медиатор в среде осознанных отношений</p>
+                    <p class="founder__text">Восемь лет я организовывала свадебные торжества — безупречные декорации для начала пути. Но за красивым кадром я часто видела хрупкость союзов. Это побудило меня сменить фокус: вместо организации событий я стала помогать людям в создании семейного наследия.</p>
+                </div>
+                <p class="founder__aside">Я замужем уже 14 лет и могу сказать, что созидательный союз — это настоящая «командная игра». Когда дом становится крепостью взаимной поддержки, вы обретаете фундамент для династии и укрепления себя в этом мире.</p>
+            </div>
+            <div class="founder__side">
+                <div class="founder__portrait">
+                    <div class="founder__badge">Давайте создадим ваше сильное будущее вместе!</div>
+                    <img src="/src/assets/img/image7.webp" alt="">
+                </div>
+                <div class="founder__notes">
+                    <p class="founder__text">«Давай вместе» — это ответ инфошуму, жизненному хаосу и дефициту искренности. В&nbsp;этом проекте я ваш куратор, преобразующий искреннее желание найти своего человека в выверенный план действий.</p>
+                    <p class="founder__text">Моя миссия — исключить случайность и&nbsp;создать «чистый контекст», где вы встречаете только резонирующих по масштабу и ценностям людей.</p>
+                </div>
+                <div class="founder__family">
+                    <img src="/src/assets/img/image8.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="marquee-text">
+        <div class="marquee-text__item">ЗАКРЫТЫЙ КЛУБ И БРАЧНОЕ АГЕНТСТВО</div>
+        <div class="marquee-text__item">ДАВАЙ ВМЕСТЕ ДАВАЙ ВМЕСТЕ</div>
+    </div>
+</section>
+
+<section class="steps p-indent">
+    <div class="container">
+        <div class="steps__header">
+            <div class="steps__under-title under-title">{Этапы}</div>
+            <h2 class="steps__title"><span>Вступление</span> <span>в клуб</span></h2>
+        </div>
+        <div class="steps__layout">
+            <div class="steps__list">
+                <article class="steps__item steps__item--active">
+                    <div class="steps__num">1/5</div>
+                    <h3 class="steps__name">Заявка и верификация</h3>
+                    <p class="steps__text">Вы оставляете запрос на получение доступа к экосистеме. Регистрация необходима для обеспечения комфорта резидентов и формирования безопасной среды.</p>
+                </article>
+                <article class="steps__item">
+                    <div class="steps__num">2/5</div>
+                    <h3 class="steps__name">Погружение в контекст</h3>
+                    <p class="steps__text">После одобрения заявки вы знакомитесь с этическим кодексом, ценностями экосистемы и форматами участия для дальнейшего выбора.</p>
+                </article>
+                <article class="steps__item">
+                    <div class="steps__num">3/5</div>
+                    <h3 class="steps__name">Выбор формата участия</h3>
+                    <p class="steps__text">Вы определяете вектор взаимодействия: участие в жизни селективного сообщества и его мероприятиях или переход к индивидуальному подбору пары в брачном агентстве.</p>
+                </article>
+                <article class="steps__item">
+                    <div class="steps__num">4/5</div>
+                    <h3 class="steps__name">Селективная среда</h3>
+                    <p class="steps__text">Встречи с людьми с общими ценностями на культурных событиях, бизнес-завтраках, нетворкингах. Приятное и интеллектуальное времяпрепровождение.</p>
+                </article>
+                <article class="steps__item">
+                    <div class="steps__num">5/5</div>
+                    <h3 class="steps__name">Брачное агентство</h3>
+                    <p class="steps__text">Персональный подбор партнера на основе ценностного созвучия и сопровождение на каждом этапе: от первой встречи до создания устойчивой и глубокой связи.</p>
+                </article>
+                <button class="btn btn--primary steps__apply" type="button" data-modal="order-modal">Подать заявку</button>
+            </div>
+            <div class="steps__panel">
+                <div class="steps__panel-bg" style="background-image: url('/src/assets/img/image10.webp');"></div>
+                <div class="steps__panel-body">
+                    <div class="steps__panel-media">
+                        <img class="is-active" src="/src/assets/img/image9.webp" alt="">
+                        <img src="/src/assets/img/image11.webp" alt="">
+                        <img src="/src/assets/img/image12.webp" alt="">
+                        <img src="/src/assets/img/image13.webp" alt="">
+                        <img src="/src/assets/img/image14.webp" alt="">
+                    </div>
+                    <div class="steps__panel-title">Заявка и верификация</div>
+                    <button class="btn btn--primary" type="button" data-modal="order-modal">Подать заявку</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="environment p-indent" style="background-image: url('/src/assets/img/image15.webp');">
+    <div class="container environment__container">
+        <div class="environment__intro">
+            <div class="environment__under-title under-title">{Среда}</div>
+            <div class="environment__copy">
+                <h2 class="environment__title">Герметичная<br> и модерируемая среда</h2>
+                <div class="environment__brand">ДАВАЙ ВМЕСТЕ</div>
+            </div>
+        </div>
+        <div class="environment__cards">
+            <article class="environment__card">
+                <img class="environment__card-icon" src="/src/assets/img/svg/icon1.svg" alt="">
+                <h3 class="environment__card-title">Безупречная конфиденциальность</h3>
+                <p class="environment__card-text">Непубличность — базовый принцип экосистемы. Личная информация и история взаимодействия не подлежат огласке и защищены внутренней политикой экосистемы.</p>
+            </article>
+            <article class="environment__card">
+                <img class="environment__card-icon" src="/src/assets/img/svg/icon2.svg" alt="">
+                <h3 class="environment__card-title">Конфиденциальность</h3>
+                <p class="environment__card-text">Мы следим за уровнем контекста. Ценностный подбор резидентов позволяет сохранить в сообществе комфортную и содержательную почву для глубокого общения и совместного опыта.</p>
+            </article>
+            <article class="environment__card">
+                <img class="environment__card-icon" src="/src/assets/img/svg/icon3.svg" alt="">
+                <h3 class="environment__card-title">Конфиденциальность</h3>
+                <p class="environment__card-text">Взаимоуважение и ответственность — фундамент нашей этики. Взаимодействие внутри проекта регулируется чёткими правилами. Мы гарантируем безопасное пространство доверия.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="partners p-indent">
+    <div class="container">
+        <div class="partners__header">
+            <div class="partners__under-title under-title">{Партнеры}</div>
+            <h2 class="partners__title">Союзники и резиденты<br>экосистемы</h2>
+        </div>
+        <div class="partners__tabs">
+            <button class="partners__tab active" type="button" data-tab="partner-1">
+                <img class="partners__avatar" src="/src/assets/img/photo-mini-1.webp" alt="">
+                <span class="partners__name">Ксения<br>Перепелкина</span>
+                <span class="partners__role">юридический специалист по защите бизнеса</span>
+            </button>
+            <button class="partners__tab" type="button" data-tab="partner-2">
+                <img class="partners__avatar" src="/src/assets/img/photo-mini-2.webp" alt="">
+                <span class="partners__name">Ксения<br>Перепелкина</span>
+                <span class="partners__role">психологический центр</span>
+            </button>
+            <button class="partners__tab" type="button" data-tab="partner-3">
+                <img class="partners__avatar" src="/src/assets/img/photo-mini-3.webp" alt="">
+                <span class="partners__name">Ксения<br>Перепелкина</span>
+                <span class="partners__role">туроператор «Слетать.ру»</span>
+            </button>
+            <button class="partners__tab" type="button" data-tab="partner-4">
+                <img class="partners__avatar" src="/src/assets/img/photo-mini-4.webp" alt="">
+                <span class="partners__name">Елена<br>Барвина</span>
+                <span class="partners__role">SMM-агентство</span>
+            </button>
+            <button class="partners__tab" type="button" data-tab="partner-5">
+                <img class="partners__avatar" src="/src/assets/img/photo-mini-5.webp" alt="">
+                <span class="partners__name">Анна<br>Пакулева</span>
+                <span class="partners__role">международное агентство веб-дизайна</span>
+            </button>
+        </div>
+        <article class="partners__person active" data-block="partner-1">
+            <div class="partners__photo">
+                <img src="/src/assets/img/image16.webp" alt="">
+            </div>
+            <div class="partners__info">
+                <h3 class="partners__person-name">Ксения Перепелкина</h3>
+                <div class="partners__tags">
+                    <span class="partners__tag">6 лет опыта</span>
+                    <span class="partners__tag">Дизайн сайтов/сервисов и приложений</span>
+                </div>
+                <p class="partners__text">Сопровождаю собственников в вопросах защиты активов, договоров и репутации. Выстраиваю юридическую рамку так, чтобы решения принимались спокойно и без лишнего риска.</p>
+                <p class="partners__lead">Беру на себя:</p>
+                <ul class="partners__list">
+                    <li>проверку договоров и партнёрских условий</li>
+                    <li>защиту интеллектуальной собственности и бренда</li>
+                    <li>сопровождение сделок внутри экосистемы</li>
+                </ul>
+                <a class="partners__more" href="#">Узнать больше о партнере</a>
+            </div>
+        </article>
+        <article class="partners__person" data-block="partner-2">
+            <div class="partners__photo">
+                <img src="/src/assets/img/image15.webp" alt="">
+            </div>
+            <div class="partners__info">
+                <h3 class="partners__person-name">Ксения Перепелкина</h3>
+                <div class="partners__tags">
+                    <span class="partners__tag">8 лет опыта</span>
+                    <span class="partners__tag">Психологическое сопровождение</span>
+                </div>
+                <p class="partners__text">Помогаю удерживать ясность в отношениях и в бизнесе: от личных запросов до командной динамики. Работа строится бережно и по существу.</p>
+                <p class="partners__lead">В фокусе:</p>
+                <ul class="partners__list">
+                    <li>личные и семейные консультации</li>
+                    <li>поддержка на этапах выбора партнёра</li>
+                    <li>работа с границами и коммуникацией</li>
+                </ul>
+                <a class="partners__more" href="#">Узнать больше о партнере</a>
+            </div>
+        </article>
+        <article class="partners__person" data-block="partner-3">
+            <div class="partners__photo">
+                <img src="/src/assets/img/image16.webp" alt="">
+            </div>
+            <div class="partners__info">
+                <h3 class="partners__person-name">Ксения Перепелкина</h3>
+                <div class="partners__tags">
+                    <span class="partners__tag">12 лет опыта</span>
+                    <span class="partners__tag">Путешествия</span>
+                </div>
+                <p class="partners__text">Собираю поездки, в которых важен не маршрут сам по себе, а люди и контекст. Для резидентов клуба — закрытые форматы и спокойная логистика.</p>
+                <p class="partners__lead">Организую:</p>
+                <ul class="partners__list">
+                    <li>клубные выезды и камерные путешествия</li>
+                    <li>маршруты под ценности компании</li>
+                    <li>сопровождение от идеи до возвращения</li>
+                </ul>
+                <a class="partners__more" href="#">Узнать больше о партнере</a>
+            </div>
+        </article>
+        <article class="partners__person" data-block="partner-4">
+            <div class="partners__photo">
+                <img src="/src/assets/img/image15.webp" alt="">
+            </div>
+            <div class="partners__info">
+                <h3 class="partners__person-name">Елена Барвина</h3>
+                <div class="partners__tags">
+                    <span class="partners__tag">8 лет опыта</span>
+                    <span class="partners__tag">SMM и медиа</span>
+                </div>
+                <p class="partners__text">Собираю голос бренда так, чтобы он звучал точно и без лишнего шума. Для клуба и агентства важны тон, приватность и долгая репутация.</p>
+                <p class="partners__lead">Делаю:</p>
+                <ul class="partners__list">
+                    <li>стратегию присутствия в медиа</li>
+                    <li>аккуратную упаковку смыслов</li>
+                    <li>сопровождение коммуникаций резидентов</li>
+                </ul>
+                <a class="partners__more" href="#">Узнать больше о партнере</a>
+            </div>
+        </article>
+        <article class="partners__person" data-block="partner-5">
+            <div class="partners__photo">
+                <img src="/src/assets/img/image16.webp" alt="">
+            </div>
+            <div class="partners__info">
+                <h3 class="partners__person-name">Анна Пакулева</h3>
+                <div class="partners__tags">
+                    <span class="partners__tag">6 лет опыта</span>
+                    <span class="partners__tag">Дизайн сайтов/сервисов и приложений</span>
+                </div>
+                <p class="partners__text">Я не просто рисую интерфейсы, а проектирую цифровой контекст, который масштабирует бизнес. За 6 лет и 70+ реализованных проектов (от Twinby до государственных структур — «Росэлектроника», Портал банковских гарантий) научилась видеть за визуалом фундаментальную логику и ценности бизнеса. Весь путь: от идеи, дизайна и до передачи в разработку, я выстраиваю как прозрачный и до мелочей продуманный процесс.</p>
+                <p class="partners__lead">Создаем сайты и интерфейсы под ключ, которые:</p>
+                <ul class="partners__list">
+                    <li>логически продолжают и раскрывают смыслы клиента</li>
+                    <li>работают на повышении доверия и удобство</li>
+                    <li>адаптированы для долгосрочного масштабирования</li>
+                </ul>
+                <a class="partners__more" href="#">Узнать больше о партнере</a>
+            </div>
+        </article>
+        <button class="btn btn--primary partners__join" type="button">Стать участником</button>
+    </div>
+</section>
+
+<section class="request p-indent">
+    <div class="container">
+        <div class="request__header">
+            <h2 class="request__title">Давайте вместе сделаем шаг<br>к осмысленным отношениям</h2>
+            <p class="request__text">Оставьте заявку, чтобы открыть доступ к среде созвучных людей.</p>
+        </div>
+        <form class="request__form">
+            <input class="request__input input required" type="text" name="name" placeholder="Ваше имя" autocomplete="name">
+            <div class="request__phone">
+                <img class="request__flag" src="/src/assets/img/svg/ru.svg" alt="">
+                <input class="request__input input required" type="tel" name="phone" placeholder="+7 999 999 99 99" autocomplete="tel">
+            </div>
+            <input class="request__input input required" type="email" name="email" placeholder="Электронная почта" autocomplete="email">
+            <div class="request__checks">
+                <div class="field checkbox-field">
+                    <div class="checkbox-field__box">
+                        <input type="checkbox" class="checkbox-field__input required" name="offer">
+                    </div>
+                    <div class="checkbox-field__label">Я подтверждаю, что ознакомлен (а) с <a href="#">офертой</a></div>
+                </div>
+                <div class="field checkbox-field">
+                    <div class="checkbox-field__box">
+                        <input type="checkbox" class="checkbox-field__input required" name="privacy">
+                    </div>
+                    <div class="checkbox-field__label">Я подтверждаю, что ознакомлен (а) с <a href="#">политикой в отношении обработки персональных данных</a> и даю своё согласие на обработку персональных данных</div>
+                </div>
+                <div class="field checkbox-field">
+                    <div class="checkbox-field__box">
+                        <input type="checkbox" class="checkbox-field__input required" name="ads">
+                    </div>
+                    <div class="checkbox-field__label">Я ознакомлен (а) с <a href="#">политикой рекламной рассылки</a> и даю своё согласие на рекламную рассылку</div>
+                </div>
+            </div>
+            <button class="btn btn--primary request__submit send-form" type="button">Отправить заявку</button>
+        </form>
+    </div>
+</section>
+
+{% endblock %}

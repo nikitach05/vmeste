@@ -1,0 +1,45 @@
+<div id="order-modal" style="display: none;">
+    <div class="order-modal">
+        <button class="order-modal__close" type="button" data-fancybox-close aria-label="Закрыть">
+            <svg>
+                <use href="/src/assets/img/svg-sprite/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <h2 class="order-modal__title">Оставьте заявку и мы расскажем, чем клуб может быть полезен лично для вас</h2>
+        <form class="order-modal__form">
+            <input class="request__input input required" type="text" name="name" placeholder="Ваше имя" autocomplete="name">
+            <div class="request__phone">
+                <img class="request__flag" src="/src/assets/img/svg/ru.svg" alt="">
+                <span class="order-modal__caret" aria-hidden="true"></span>
+                <input class="request__input input required" type="tel" name="phone" placeholder="+7 999 999 99 99" autocomplete="tel">
+            </div>
+            <div class="request__checks">
+                <div class="field checkbox-field">
+                    <div class="checkbox-field__box">
+                        <input type="checkbox" class="checkbox-field__input required" name="privacy">
+                    </div>
+                    <div class="checkbox-field__label">Я подтверждаю, что ознакомлен (а) с <a href="#">политикой в отношении обработки персональных данных</a> и даю своё <a href="#">согласие</a> на обработку персональных данных</div>
+                </div>
+                <div class="field checkbox-field">
+                    <div class="checkbox-field__box">
+                        <input type="checkbox" class="checkbox-field__input required" name="ads">
+                    </div>
+                    <div class="checkbox-field__label">Я ознакомлен (а) с <a href="#">политикой рекламной рассылки</a> и даю своё <a href="#">согласие</a> на рекламную рассылку</div>
+                </div>
+            </div>
+            <button class="btn btn--primary request__submit send-form" type="button">Отправить заявку</button>
+        </form>
+    </div>
+</div>
+
+<div id="success-modal" style="display: none;">
+    <div class="success-modal">
+        <button class="order-modal__close" type="button" data-fancybox-close aria-label="Закрыть">
+            <svg>
+                <use href="/src/assets/img/svg-sprite/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <h2 class="success-modal__title">Спасибо!<br>ваша заявка отправлена</h2>
+        <p class="success-modal__text">Менеджер свяжется с вами в ближайшее время и расскажет все подробности</p>
+    </div>
+</div>

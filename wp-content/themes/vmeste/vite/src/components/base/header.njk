@@ -1,0 +1,39 @@
+<header class="header">
+	<div class="container">
+		<div class="header__content">
+			<!-- <a href="/" class="header__logo logo">
+				<img src="/src/assets/img/logo.svg" alt="Logo">
+			</a> -->
+
+			<ul class="header__menu menu">
+				{% for li in menu %}
+				<li class="menu__item">
+					<a class="menu__link" href="#">{{li.item}}</a>
+				</li>
+				{% endfor %}
+			</ul>
+
+			<button class="header__menu-toggle menu-toggle" type="button">Меню</button>
+
+		</div>
+	</div>
+	
+	<div class="header__mobile-menu mobile-menu">
+	
+		<button class="mobile-menu__close" type="button" aria-label="Закрыть">
+			<svg>
+				<use href="/src/assets/img/svg-sprite/sprite.svg#close"></use>
+			</svg>
+		</button>
+	
+		<ul class="mobile-menu__list">
+			{% for li in menu %}
+			<li class="mobile-menu__list-item">
+				<a class="mobile-menu__list-link" href="#">{{li.item}}</a>
+			</li>
+			{% endfor %}
+		</ul>
+	
+	</div>
+	
+</header>

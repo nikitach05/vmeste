@@ -1,0 +1,44 @@
+.title {
+    position: relative;
+    display: inline-block;
+}
+
+h2.title {
+    font-size: slamp(r(56), r(95));
+    line-height: 80%;
+    font-weight: 400;
+    font-family: var(--title);
+    color: var(--text);
+}
+
+.input,
+.textarea {
+    display: block;
+    width: 100%;
+    padding: r(12);
+    outline: none;
+    border: 1px solid var(--border);
+    border-radius: 0;
+    @include font();
+    color: var(--text);
+    background: var(--white);
+    box-shadow: none;
+
+    &::placeholder {
+        color: var(--gray);
+    }
+
+    &.error:not(&:focus) {
+        color: var(--error);
+        border-color: var(--error);
+
+        &::placeholder {
+            color: var(--error);
+        }
+    }
+}
+
+.textarea {
+    min-height: 16rem;
+    resize: none;
+}
