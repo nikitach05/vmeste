@@ -49,8 +49,10 @@
 
     &__title-text {
         display: inline-block;
-        transform-origin: left center;
+        transform-origin: left top;
         will-change: transform;
+        pointer-events: none;
+        z-index: 110;
     }
 
     &__description {
