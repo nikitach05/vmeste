@@ -45,7 +45,7 @@
 .order-modal,
 .success-modal {
     position: relative;
-    width: min(r(460), calc(100vw - r(32)));
+    width: min(r(360), calc(100vw - r(32)));
     padding: r(56) r(28) r(32);
     border-radius: 0;
     background: var(--headline);
@@ -79,10 +79,10 @@
         margin: 0;
         font-family: var(--title);
         font-weight: 400;
-        font-size: slamp(r(26), r(34));
-        line-height: 115%;
+        font-size: slamp(r(24), r(32));
+        line-height: 90%;
         text-align: center;
-        color: var(--light);
+        color: var(--surface);
     }
 
     &__form {

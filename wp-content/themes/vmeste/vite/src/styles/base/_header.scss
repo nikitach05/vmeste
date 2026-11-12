@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 100;
+    z-index: 200;
 
     &::after {
         display: none;
@@ -209,11 +209,11 @@
     &__close {
         position: absolute;
         top: r(15);
-        left: $container-gap;
+        right: $container-gap;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: r(56);
+        width: r(76);
         height: r(40);
         margin: 0;
         padding: 0;
