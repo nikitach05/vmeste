@@ -81,6 +81,7 @@ function bindHeroTitle(text, section) {
     }
 
     function update() {
+        const header = document.querySelector('.header');
         const distance = Math.max(section.offsetHeight * 0.55, 1);
         const progress = Math.min(1, Math.max(0, window.scrollY / distance));
         const eased = progress * progress * (3 - 2 * progress);
@@ -95,9 +96,11 @@ function bindHeroTitle(text, section) {
         text.style.left = '0';
         text.style.top = '0';
         text.style.margin = '0';
-        text.style.zIndex = '110';
+        text.style.zIndex = '210';
         text.style.transformOrigin = 'left top';
         text.style.transform = `translate3d(${x.toFixed(2)}px, ${y.toFixed(2)}px, 0) scale(${scale.toFixed(4)})`;
+
+        header?.classList.toggle('header--light', progress >= 1);
     }
 
     function onScroll() {

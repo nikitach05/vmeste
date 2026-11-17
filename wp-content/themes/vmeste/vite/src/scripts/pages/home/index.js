@@ -3,6 +3,8 @@ import '../../components/text-marquee.js';
 import '../../components/steps-scroll.js';
 import '../../components/hero-title.js';
 import '../../components/environment-cards.js';
+import '../../components/materials-slider.js';
+import '../../components/events-slider.js';
 import ShowBlockByTab from '../../components/show-block-by-tab.js';
 
 function initPartners() {

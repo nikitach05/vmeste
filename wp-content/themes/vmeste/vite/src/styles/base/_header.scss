@@ -8,6 +8,14 @@
     align-items: center;
     justify-content: center;
     z-index: 200;
+    background: transparent;
+    backdrop-filter: blur(0);
+    transition: background .4s ease, backdrop-filter .4s ease;
+
+    &--light {
+        background: rgba(255, 255, 255, .2);
+        backdrop-filter: blur(20px);
+    }
 
     &::after {
         display: none;
