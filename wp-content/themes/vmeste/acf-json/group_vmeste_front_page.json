@@ -1,0 +1,1865 @@
+{
+    "key": "group_vmeste_front_page",
+    "title": "Главная",
+    "fields": [
+        {
+            "key": "field_vm_fp_tab_main",
+            "label": "Главный экран",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_vm_fp_main",
+            "label": "Главный экран",
+            "name": "main",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_vm_fp_main_show",
+                    "label": "Показать блок",
+                    "name": "show",
+                    "type": "true_false",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_vm_fp_main_bg",
+                    "label": "Фон",
+                    "name": "background",
+                    "type": "image",
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "mime_types": "jpg,jpeg,png,webp,svg",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_main_under",
+                    "label": "Надзаголовок",
+                    "name": "under_title",
+                    "type": "text",
+                    "default_value": "Интеллектуальная среда &Брачное агентство",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_main_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "ДАВАЙ ВМЕСТЕ",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_main_desc",
+                    "label": "Описание",
+                    "name": "description",
+                    "type": "wysiwyg",
+                    "default_value": "<span>Ценностный фундамент<\/span> семьи и отношений",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0
+                },
+                {
+                    "key": "field_vm_fp_main_list",
+                    "label": "Список",
+                    "name": "list",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить пункт",
+                    "sub_fields": [
+                        {
+                            "key": "field_vm_fp_main_list_item",
+                            "label": "Пункт",
+                            "name": "text",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "field_vm_fp_main_btn_primary",
+                    "label": "Кнопка основная",
+                    "name": "button_primary",
+                    "type": "group",
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_vm_fp_main_btn_primary_text",
+                            "label": "Текст",
+                            "name": "text",
+                            "type": "text",
+                            "default_value": "Присоединиться",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_main_btn_primary_url",
+                            "label": "Ссылка",
+                            "name": "url",
+                            "type": "url",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "field_vm_fp_main_btn_secondary",
+                    "label": "Кнопка вторичная",
+                    "name": "button_secondary",
+                    "type": "group",
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_vm_fp_main_btn_secondary_text",
+                            "label": "Текст",
+                            "name": "text",
+                            "type": "text",
+                            "default_value": "Погрузиться в контекст",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_main_btn_secondary_url",
+                            "label": "Ссылка",
+                            "name": "url",
+                            "type": "url",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "field_vm_fp_main_clients",
+                    "label": "Логотипы клиентов",
+                    "name": "clients",
+                    "type": "repeater",
+                    "layout": "table",
+                    "button_label": "Добавить логотип",
+                    "sub_fields": [
+                        {
+                            "key": "field_vm_fp_main_clients_logo",
+                            "label": "Логотип",
+                            "name": "logo",
+                            "type": "image",
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "mime_types": "jpg,jpeg,png,webp,svg",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_vm_fp_tab_for_whom",
+            "label": "Кому подойдёт",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_vm_fp_for_whom",
+            "label": "Кому подойдёт",
+            "name": "for_whom",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_vm_fp_for_whom_show",
+                    "label": "Показать блок",
+                    "name": "show",
+                    "type": "true_false",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_vm_fp_for_whom_bg",
+                    "label": "Фон",
+                    "name": "background",
+                    "type": "image",
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "mime_types": "jpg,jpeg,png,webp,svg",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_for_whom_under",
+                    "label": "Надзаголовок",
+                    "name": "under_title",
+                    "type": "text",
+                    "default_value": "Кому подойдёт",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_for_whom_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Для того, кто исключает случайность",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_for_whom_desc",
+                    "label": "Описание",
+                    "name": "description",
+                    "type": "wysiwyg",
+                    "default_value": "Контекст для создания семьи в атмосфере безусловного принятия и доверия. <strong>Мы берем на себя фильтрацию среды, чтобы вы могли быть собой среди равных.<\/strong>",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0
+                }
+            ]
+        },
+        {
+            "key": "field_vm_fp_tab_formats",
+            "label": "Форматы",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_vm_fp_formats",
+            "label": "Форматы",
+            "name": "formats",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_vm_fp_formats_show",
+                    "label": "Показать блок",
+                    "name": "show",
+                    "type": "true_false",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_vm_fp_formats_under",
+                    "label": "Надзаголовок",
+                    "name": "under_title",
+                    "type": "text",
+                    "default_value": "Форматы",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_formats_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Экосистема осмысленных отношений",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_formats_desc",
+                    "label": "Описание",
+                    "name": "description",
+                    "type": "text",
+                    "default_value": "Единый контекст — два уровня погружения",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_formats_cards",
+                    "label": "Карточки",
+                    "name": "cards",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить карточку",
+                    "sub_fields": [
+                        {
+                            "key": "field_vm_fp_formats_cards_agency",
+                            "label": "Вариант «Брачное агентство»",
+                            "name": "is_agency",
+                            "type": "true_false",
+                            "default_value": 0,
+                            "ui": 1,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_formats_cards_image",
+                            "label": "Изображение",
+                            "name": "image",
+                            "type": "image",
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "mime_types": "jpg,jpeg,png,webp,svg",
+                            "wrapper": {
+                                "width": "35",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_formats_cards_bg",
+                            "label": "Фон карточки",
+                            "name": "background",
+                            "type": "image",
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "mime_types": "jpg,jpeg,png,webp,svg",
+                            "wrapper": {
+                                "width": "35",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_formats_cards_title",
+                            "label": "Заголовок",
+                            "name": "title",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_formats_cards_text",
+                            "label": "Текст",
+                            "name": "text",
+                            "type": "textarea",
+                            "default_value": "",
+                            "rows": 3,
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_vm_fp_formats_cards_list",
+                            "label": "Список",
+                            "name": "list",
+                            "type": "repeater",
+                            "layout": "block",
+                            "button_label": "Добавить пункт",
+                            "sub_fields": [
+                                {
+                                    "key": "field_vm_fp_formats_cards_list_item",
+                                    "label": "Пункт",
+                                    "name": "text",
+                                    "type": "text",
+                                    "default_value": "",
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_vm_fp_formats_cards_btn",
+                            "label": "Кнопка",
+                            "name": "button",
+                            "type": "group",
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_vm_fp_formats_cards_btn_text",
+                                    "label": "Текст",
+                                    "name": "text",
+                                    "type": "text",
+                                    "default_value": "Стать частью сообщества",
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "key": "field_vm_fp_formats_cards_btn_url",
+                                    "label": "Ссылка",
+                                    "name": "url",
+                                    "type": "url",
+                                    "default_value": "",
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_vm_fp_tab_for_you",
+            "label": "Это для вас",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_vm_fp_for_you",
+            "label": "Это для вас",
+            "name": "for_you",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_vm_fp_for_you_show",
+                    "label": "Показать блок",
+                    "name": "show",
+                    "type": "true_false",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_vm_fp_for_you_under",
+                    "label": "Надзаголовок",
+                    "name": "under_title",
+                    "type": "text",
+                    "default_value": "Это для вас",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_for_you_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "На чём построен проект «Давай вместе»",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_for_you_image",
+                    "label": "Изображение",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "mime_types": "jpg,jpeg,png,webp,svg",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_for_you_items",
+                    "label": "Пункты",
+                    "name": "items",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить пункт",
+                    "sub_fields": [
+                        {
+                            "key": "field_vm_fp_for_you_items_title",
+                            "label": "Заголовок",
+                            "name": "title",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_for_you_items_text",
+                            "label": "Текст",
+                            "name": "text",
+                            "type": "textarea",
+                            "default_value": "",
+                            "rows": 3,
+                            "new_lines": "br"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_vm_fp_tab_founder",
+            "label": "Основатель",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_vm_fp_founder",
+            "label": "Основатель",
+            "name": "founder",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_vm_fp_founder_show",
+                    "label": "Показать блок",
+                    "name": "show",
+                    "type": "true_false",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_vm_fp_founder_title_1",
+                    "label": "Заголовок — строка 1",
+                    "name": "title_1",
+                    "type": "text",
+                    "default_value": "Основатель",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_founder_title_2",
+                    "label": "Заголовок — строка 2",
+                    "name": "title_2",
+                    "type": "text",
+                    "default_value": "проекта",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_founder_photo",
+                    "label": "Фото",
+                    "name": "photo",
+                    "type": "image",
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "mime_types": "jpg,jpeg,png,webp,svg",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_founder_name",
+                    "label": "Имя",
+                    "name": "name",
+                    "type": "text",
+                    "default_value": "Елена Барвина",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_founder_role",
+                    "label": "Роль",
+                    "name": "role",
+                    "type": "text",
+                    "default_value": "Ваш медиатор в среде осознанных отношений",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_founder_intro",
+                    "label": "Вступление",
+                    "name": "intro",
+                    "type": "textarea",
+                    "default_value": "Восемь лет я организовывала свадебные торжества — безупречные декорации для начала пути. Но за красивым кадром я часто видела хрупкость союзов. Это побудило меня сменить фокус: вместо организации событий я стала помогать людям в создании семейного наследия.",
+                    "rows": 3,
+                    "new_lines": "br"
+                },
+                {
+                    "key": "field_vm_fp_founder_aside",
+                    "label": "Боковой текст",
+                    "name": "aside",
+                    "type": "textarea",
+                    "default_value": "Я замужем уже 14 лет и могу сказать, что созидательный союз — это настоящая «командная игра». Когда дом становится крепостью взаимной поддержки, вы обретаете фундамент для династии и укрепления себя в этом мире.",
+                    "rows": 3,
+                    "new_lines": "br"
+                },
+                {
+                    "key": "field_vm_fp_founder_portrait",
+                    "label": "Портрет",
+                    "name": "portrait",
+                    "type": "image",
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "mime_types": "jpg,jpeg,png,webp,svg",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_founder_badge",
+                    "label": "Бейдж",
+                    "name": "badge",
+                    "type": "text",
+                    "default_value": "Давайте создадим ваше сильное будущее вместе!",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_founder_note_1",
+                    "label": "Заметка 1",
+                    "name": "note_1",
+                    "type": "textarea",
+                    "default_value": "«Давай вместе» — это ответ инфошуму, жизненному хаосу и дефициту искренности. В этом проекте я ваш куратор, преобразующий искреннее желание найти своего человека в выверенный план действий.",
+                    "rows": 3,
+                    "new_lines": "br"
+                },
+                {
+                    "key": "field_vm_fp_founder_note_2",
+                    "label": "Заметка 2",
+                    "name": "note_2",
+                    "type": "textarea",
+                    "default_value": "Моя миссия — исключить случайность и создать «чистый контекст», где вы встречаете только резонирующих по масштабу и ценностям людей.",
+                    "rows": 3,
+                    "new_lines": "br"
+                },
+                {
+                    "key": "field_vm_fp_founder_family",
+                    "label": "Фото семьи",
+                    "name": "family",
+                    "type": "image",
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "mime_types": "jpg,jpeg,png,webp,svg",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_founder_marquee_1",
+                    "label": "Бегущая строка 1",
+                    "name": "marquee_1",
+                    "type": "text",
+                    "default_value": "ЗАКРЫТЫЙ КЛУБ И БРАЧНОЕ АГЕНТСТВО",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_founder_marquee_2",
+                    "label": "Бегущая строка 2",
+                    "name": "marquee_2",
+                    "type": "text",
+                    "default_value": "ДАВАЙ ВМЕСТЕ ДАВАЙ ВМЕСТЕ",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_vm_fp_tab_steps",
+            "label": "Этапы",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_vm_fp_steps",
+            "label": "Этапы",
+            "name": "steps",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_vm_fp_steps_show",
+                    "label": "Показать блок",
+                    "name": "show",
+                    "type": "true_false",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_vm_fp_steps_under",
+                    "label": "Надзаголовок",
+                    "name": "under_title",
+                    "type": "text",
+                    "default_value": "Этапы",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_steps_title_1",
+                    "label": "Заголовок — строка 1",
+                    "name": "title_1",
+                    "type": "text",
+                    "default_value": "Вступление",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_steps_title_2",
+                    "label": "Заголовок — строка 2",
+                    "name": "title_2",
+                    "type": "text",
+                    "default_value": "в клуб",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_steps_panel_bg",
+                    "label": "Фон панели",
+                    "name": "panel_background",
+                    "type": "image",
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "mime_types": "jpg,jpeg,png,webp,svg",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_steps_btn",
+                    "label": "Текст кнопки",
+                    "name": "button_text",
+                    "type": "text",
+                    "default_value": "Подать заявку",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_steps_items",
+                    "label": "Шаги",
+                    "name": "items",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить шаг",
+                    "sub_fields": [
+                        {
+                            "key": "field_vm_fp_steps_items_name",
+                            "label": "Название",
+                            "name": "name",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_steps_items_text",
+                            "label": "Текст",
+                            "name": "text",
+                            "type": "textarea",
+                            "default_value": "",
+                            "rows": 3,
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_vm_fp_steps_items_image",
+                            "label": "Изображение панели",
+                            "name": "image",
+                            "type": "image",
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "mime_types": "jpg,jpeg,png,webp,svg",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_vm_fp_tab_materials",
+            "label": "Материалы",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_vm_fp_materials",
+            "label": "Материалы",
+            "name": "materials",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_vm_fp_materials_show",
+                    "label": "Показать блок",
+                    "name": "show",
+                    "type": "true_false",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_vm_fp_materials_under",
+                    "label": "Надзаголовок",
+                    "name": "under_title",
+                    "type": "text",
+                    "default_value": "Мы делимся ценным опытом о культуре осознанных отношений",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_materials_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Материалы",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_materials_all",
+                    "label": "Кнопка «Все материалы»",
+                    "name": "button_all",
+                    "type": "group",
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_vm_fp_materials_all_text",
+                            "label": "Текст",
+                            "name": "text",
+                            "type": "text",
+                            "default_value": "Посмотреть все материалы",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_materials_all_url",
+                            "label": "Ссылка",
+                            "name": "url",
+                            "type": "url",
+                            "default_value": "#",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "field_vm_fp_materials_items",
+                    "label": "Материалы",
+                    "name": "items",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить материал",
+                    "sub_fields": [
+                        {
+                            "key": "field_vm_fp_materials_items_type",
+                            "label": "Тип",
+                            "name": "type",
+                            "type": "select",
+                            "choices": {
+                                "article": "Статья",
+                                "video": "Видео"
+                            },
+                            "default_value": "article",
+                            "return_format": "value",
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_materials_items_expert",
+                            "label": "Материал эксперта",
+                            "name": "is_expert",
+                            "type": "true_false",
+                            "default_value": 0,
+                            "ui": 1,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_materials_items_badge",
+                            "label": "Бейдж",
+                            "name": "badge",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_materials_items_image",
+                            "label": "Обложка",
+                            "name": "image",
+                            "type": "image",
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "mime_types": "jpg,jpeg,png,webp,svg",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_materials_items_title",
+                            "label": "Заголовок",
+                            "name": "title",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_materials_items_text",
+                            "label": "Текст (для статей)",
+                            "name": "text",
+                            "type": "textarea",
+                            "default_value": "",
+                            "rows": 3,
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_vm_fp_materials_items_avatar",
+                            "label": "Аватар автора",
+                            "name": "author_avatar",
+                            "type": "image",
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "mime_types": "jpg,jpeg,png,webp,svg",
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_materials_items_author",
+                            "label": "Имя автора",
+                            "name": "author_name",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_materials_items_role",
+                            "label": "Роль автора",
+                            "name": "author_role",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_materials_items_tag",
+                            "label": "Тег",
+                            "name": "tag",
+                            "type": "text",
+                            "default_value": "#Статья",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_materials_items_category",
+                            "label": "Категория",
+                            "name": "category",
+                            "type": "text",
+                            "default_value": "Брачное агентство\/отношения",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_materials_items_video",
+                            "label": "Видеофайл",
+                            "name": "video",
+                            "type": "file",
+                            "return_format": "array",
+                            "library": "all",
+                            "mime_types": "mp4,webm,mov"
+                        },
+                        {
+                            "key": "field_vm_fp_materials_items_poster",
+                            "label": "Постер видео",
+                            "name": "video_poster",
+                            "type": "image",
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "mime_types": "jpg,jpeg,png,webp,svg",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_vm_fp_tab_environment",
+            "label": "Среда",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_vm_fp_environment",
+            "label": "Среда",
+            "name": "environment",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_vm_fp_environment_show",
+                    "label": "Показать блок",
+                    "name": "show",
+                    "type": "true_false",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_vm_fp_environment_bg",
+                    "label": "Фон",
+                    "name": "background",
+                    "type": "image",
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "mime_types": "jpg,jpeg,png,webp,svg",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_environment_under",
+                    "label": "Надзаголовок",
+                    "name": "under_title",
+                    "type": "text",
+                    "default_value": "Среда",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_environment_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Герметичная и модерируемая среда",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_environment_brand",
+                    "label": "Бренд",
+                    "name": "brand",
+                    "type": "text",
+                    "default_value": "ДАВАЙ ВМЕСТЕ",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_environment_cards",
+                    "label": "Карточки",
+                    "name": "cards",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить карточку",
+                    "sub_fields": [
+                        {
+                            "key": "field_vm_fp_environment_cards_icon",
+                            "label": "Иконка",
+                            "name": "icon",
+                            "type": "image",
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "mime_types": "jpg,jpeg,png,webp,svg",
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_environment_cards_title",
+                            "label": "Заголовок",
+                            "name": "title",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "70",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_environment_cards_text",
+                            "label": "Текст",
+                            "name": "text",
+                            "type": "textarea",
+                            "default_value": "",
+                            "rows": 3,
+                            "new_lines": "br"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_vm_fp_tab_events",
+            "label": "Афиша",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_vm_fp_events",
+            "label": "Афиша событий",
+            "name": "events",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_vm_fp_events_show",
+                    "label": "Показать блок",
+                    "name": "show",
+                    "type": "true_false",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_vm_fp_events_under",
+                    "label": "Надзаголовок",
+                    "name": "under_title",
+                    "type": "text",
+                    "default_value": "Жизнь среды",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_events_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Афиша событий",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_events_desc",
+                    "label": "Описание",
+                    "name": "description",
+                    "type": "textarea",
+                    "default_value": "Здесь мы создаём и обогащаем интеллектуальную среду",
+                    "rows": 2,
+                    "new_lines": "br"
+                },
+                {
+                    "key": "field_vm_fp_events_all",
+                    "label": "Кнопка «Все мероприятия»",
+                    "name": "button_all",
+                    "type": "group",
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_vm_fp_events_all_text",
+                            "label": "Текст",
+                            "name": "text",
+                            "type": "text",
+                            "default_value": "Смотреть все мероприятия",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_events_all_url",
+                            "label": "Ссылка",
+                            "name": "url",
+                            "type": "url",
+                            "default_value": "#",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "field_vm_fp_events_items",
+                    "label": "События",
+                    "name": "items",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить событие",
+                    "sub_fields": [
+                        {
+                            "key": "field_vm_fp_events_items_type",
+                            "label": "Формат",
+                            "name": "type",
+                            "type": "select",
+                            "choices": {
+                                "open": "Открытый",
+                                "closed": "Закрытый"
+                            },
+                            "default_value": "open",
+                            "return_format": "value",
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_events_items_badge",
+                            "label": "Бейдж",
+                            "name": "badge",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_events_items_place",
+                            "label": "Формат проведения",
+                            "name": "place",
+                            "type": "text",
+                            "default_value": "Онлайн",
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_events_items_city",
+                            "label": "Город",
+                            "name": "city",
+                            "type": "text",
+                            "default_value": "г. Екатеринбург",
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_events_items_image",
+                            "label": "Обложка",
+                            "name": "image",
+                            "type": "image",
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "mime_types": "jpg,jpeg,png,webp,svg",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_events_items_title",
+                            "label": "Название",
+                            "name": "title",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_events_items_avatar",
+                            "label": "Аватар",
+                            "name": "author_avatar",
+                            "type": "image",
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "mime_types": "jpg,jpeg,png,webp,svg",
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_events_items_author",
+                            "label": "Имя",
+                            "name": "author_name",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_events_items_role",
+                            "label": "Роль",
+                            "name": "author_role",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_events_items_datetime",
+                            "label": "Дата и время",
+                            "name": "datetime",
+                            "type": "text",
+                            "default_value": "15 февраля в 11:00",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_events_items_duration",
+                            "label": "Длительность",
+                            "name": "duration",
+                            "type": "text",
+                            "default_value": "2 часа",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_vm_fp_tab_partners",
+            "label": "Партнёры",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_vm_fp_partners",
+            "label": "Партнёры",
+            "name": "partners",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_vm_fp_partners_show",
+                    "label": "Показать блок",
+                    "name": "show",
+                    "type": "true_false",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_vm_fp_partners_under",
+                    "label": "Надзаголовок",
+                    "name": "under_title",
+                    "type": "text",
+                    "default_value": "Партнеры",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_partners_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Союзники и резиденты экосистемы",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_partners_join",
+                    "label": "Текст кнопки",
+                    "name": "join_text",
+                    "type": "text",
+                    "default_value": "Стать участником",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_partners_items",
+                    "label": "Партнёры",
+                    "name": "items",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить партнёра",
+                    "sub_fields": [
+                        {
+                            "key": "field_vm_fp_partners_items_avatar",
+                            "label": "Аватар в табе",
+                            "name": "avatar",
+                            "type": "image",
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "mime_types": "jpg,jpeg,png,webp,svg",
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_partners_items_tab_name",
+                            "label": "Имя в табе",
+                            "name": "tab_name",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_partners_items_tab_role",
+                            "label": "Роль в табе",
+                            "name": "tab_role",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_partners_items_photo",
+                            "label": "Фото",
+                            "name": "photo",
+                            "type": "image",
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "mime_types": "jpg,jpeg,png,webp,svg",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_partners_items_name",
+                            "label": "Имя",
+                            "name": "name",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_partners_items_tags",
+                            "label": "Теги",
+                            "name": "tags",
+                            "type": "repeater",
+                            "layout": "table",
+                            "button_label": "Добавить тег",
+                            "sub_fields": [
+                                {
+                                    "key": "field_vm_fp_partners_items_tags_item",
+                                    "label": "Тег",
+                                    "name": "text",
+                                    "type": "text",
+                                    "default_value": "",
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_vm_fp_partners_items_text",
+                            "label": "Описание",
+                            "name": "text",
+                            "type": "textarea",
+                            "default_value": "",
+                            "rows": 3,
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_vm_fp_partners_items_lead",
+                            "label": "Подзаголовок списка",
+                            "name": "lead",
+                            "type": "text",
+                            "default_value": "Беру на себя:",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_fp_partners_items_list",
+                            "label": "Список",
+                            "name": "list",
+                            "type": "repeater",
+                            "layout": "block",
+                            "button_label": "Добавить пункт",
+                            "sub_fields": [
+                                {
+                                    "key": "field_vm_fp_partners_items_list_item",
+                                    "label": "Пункт",
+                                    "name": "text",
+                                    "type": "text",
+                                    "default_value": "",
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_vm_fp_partners_items_more",
+                            "label": "Ссылка «Узнать больше»",
+                            "name": "more",
+                            "type": "group",
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_vm_fp_partners_items_more_text",
+                                    "label": "Текст",
+                                    "name": "text",
+                                    "type": "text",
+                                    "default_value": "Узнать больше о партнере",
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "key": "field_vm_fp_partners_items_more_url",
+                                    "label": "Ссылка",
+                                    "name": "url",
+                                    "type": "url",
+                                    "default_value": "#",
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_vm_fp_tab_request",
+            "label": "Заявка",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_vm_fp_request",
+            "label": "Форма заявки",
+            "name": "request",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_vm_fp_request_show",
+                    "label": "Показать блок",
+                    "name": "show",
+                    "type": "true_false",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_vm_fp_request_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Давайте вместе сделаем шаг к осмысленным отношениям",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_request_text",
+                    "label": "Текст",
+                    "name": "text",
+                    "type": "textarea",
+                    "default_value": "Оставьте заявку, чтобы открыть доступ к среде созвучных людей.",
+                    "rows": 2,
+                    "new_lines": "br"
+                },
+                {
+                    "key": "field_vm_fp_request_submit",
+                    "label": "Текст кнопки",
+                    "name": "submit_text",
+                    "type": "text",
+                    "default_value": "Отправить заявку",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_fp_request_offer",
+                    "label": "Согласие с офертой",
+                    "name": "offer_label",
+                    "type": "wysiwyg",
+                    "default_value": "Я подтверждаю, что ознакомлен (а) с <a href=\"#\">офертой<\/a>",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0
+                },
+                {
+                    "key": "field_vm_fp_request_privacy",
+                    "label": "Согласие на ПДн",
+                    "name": "privacy_label",
+                    "type": "wysiwyg",
+                    "default_value": "Я подтверждаю, что ознакомлен (а) с <a href=\"#\">политикой в отношении обработки персональных данных<\/a> и даю своё согласие на обработку персональных данных",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0
+                },
+                {
+                    "key": "field_vm_fp_request_ads",
+                    "label": "Согласие на рассылку",
+                    "name": "ads_label",
+                    "type": "wysiwyg",
+                    "default_value": "Я ознакомлен (а) с <a href=\"#\">политикой рекламной рассылки<\/a> и даю своё согласие на рекламную рассылку",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1794911296
+}

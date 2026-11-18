@@ -8,11 +8,13 @@ import '../components/sliders';
 import '../components/checkbox';
 import '../components/radio';
 import { MaskPhone } from '../components/input-masks';
+import AnchorScroll from '../components/anchor-scroll';
 // import ScrollTop from "../components/scroll-top";
 
 document.addEventListener('DOMContentLoaded', () => {
 
 	new MaskPhone('input[type="tel"]');
+	new AnchorScroll();
 
 	document.querySelectorAll('.anketa__file-input').forEach((input) => {
 		input.addEventListener('change', () => {

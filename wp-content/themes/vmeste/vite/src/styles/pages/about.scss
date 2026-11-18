@@ -1,6 +1,5 @@
 .about-main {
     position: relative;
-    z-index: 2;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -66,10 +65,11 @@
 
     &__title-text {
         display: inline-block;
+        position: relative;
         transform-origin: left top;
         will-change: transform;
         pointer-events: none;
-        z-index: 110;
+        z-index: 210;
     }
 
     &__description {

@@ -3,6 +3,7 @@
 require_once( ABSPATH . 'vendor/autoload.php' );
 
 require_once( 'includes/constants.php' );
+require_once( 'includes/helpers.php' );
 
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wlwmanifest_link');
@@ -17,6 +18,7 @@ function start_session() {
 function theme_setup() {
   add_theme_support('title-tag');
   add_theme_support('post-thumbnails');
+  add_post_type_support('page', 'page-attributes');
 }
 add_action('after_setup_theme', 'theme_setup');
 

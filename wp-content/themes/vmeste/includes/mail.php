@@ -9,32 +9,40 @@ function send_form() {
 
   $mail = connectSMTP();
 
-  // Form data
-  $name = isset($_POST["name"]) ? $_POST["name"] : '';
-  $phone = isset($_POST["phone"]) ? $_POST["phone"] : '';
-
-  $mail_from = get_field('mail-from', PAGE_HOME_ID);
-  $mail->setFrom($mail_from, 'info@verd-m.ru');
+  $mail_from = get_field('mail_from', 'option') ?: 'info@example.com';
+  $mail->setFrom($mail_from, get_bloginfo('name'));
 
   $mail->isHTML(true);
-  $subject = "Вердиктум";
+  $subject = get_bloginfo('name') . ' — заявка';
   $mail->Subject = $subject;
-  
-  $body = "";
 
-  $mail_to = get_field('mail-to', PAGE_HOME_ID);
+  $body = '';
+
+  $mail_to = get_field('mail_to', 'option');
   if (!empty($mail_to)) {
     foreach ($mail_to as $email) {
-      $mail->addAddress($email['email'], 'Вердиктум');
+      if (!empty($email['email'])) {
+        $mail->addAddress($email['email'], get_bloginfo('name'));
+      }
     }
   }
 
-  if (!empty($name)) {
-    $body .= "Имя: " . $name . "<br>";
-  }
+  $fields = [
+    'name' => 'Имя / ФИО',
+    'phone' => 'Телефон',
+    'email' => 'Email',
+    'birthdate' => 'Дата рождения',
+    'gender' => 'Пол',
+    'city' => 'Город',
+    'family' => 'Семейное положение',
+    'partner' => 'Предпочтения по партнёру',
+    'money' => 'Материальное положение',
+  ];
 
-  if (!empty($phone)) {
-    $body .= "Телефон: " . $phone . "<br>";
+  foreach ($fields as $key => $label) {
+    if (!empty($_POST[$key])) {
+      $body .= $label . ': ' . sanitize_text_field(wp_unslash($_POST[$key])) . '<br>';
+    }
   }
 
   // Обработка загруженного файла (только один файл)
@@ -76,8 +84,8 @@ function connectSMTP() {
   $mail->SMTPDebug = 0;
 
   $mail->Host = 'ssl://smtp.mail.ru';
-  $mail->Username = 'info@verd-m.ru';
-  $mail->Password = 'MTadmULVeO5qmaqHKSXm';
+  $mail->Username = 'info@dawaivmeste.ru';
+  $mail->Password = 'T6eTdOyz7HFFHp';
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
   $mail->Port = 465;
 

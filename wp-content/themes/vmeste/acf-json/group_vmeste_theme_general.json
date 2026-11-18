@@ -1,0 +1,437 @@
+{
+    "key": "group_vmeste_theme_general",
+    "title": "Общие настройки",
+    "fields": [
+        {
+            "key": "field_vm_gen_tab_header",
+            "label": "Шапка",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_vm_gen_header",
+            "label": "Шапка",
+            "name": "header",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_vm_gen_header_menu_toggle",
+                    "label": "Текст кнопки меню",
+                    "name": "menu_toggle_text",
+                    "type": "text",
+                    "default_value": "Меню",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_vm_gen_tab_footer",
+            "label": "Футер",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_vm_gen_footer",
+            "label": "Футер",
+            "name": "footer",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_vm_gen_footer_note",
+                    "label": "Примечание сверху",
+                    "name": "note",
+                    "type": "textarea",
+                    "default_value": "Работаем онлайн по всему миру. Офис находится в г. Екатеринбург",
+                    "rows": 2,
+                    "new_lines": "br"
+                },
+                {
+                    "key": "field_vm_gen_footer_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "ДАВАЙ ВМЕСТЕ",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_gen_footer_nav_1",
+                    "label": "Навигация — колонка 1",
+                    "name": "nav_1",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить ссылку",
+                    "sub_fields": [
+                        {
+                            "key": "field_vm_gen_footer_nav_1_item_text",
+                            "label": "Текст",
+                            "name": "text",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_gen_footer_nav_1_item_url",
+                            "label": "Ссылка",
+                            "name": "url",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "field_vm_gen_footer_nav_2",
+                    "label": "Навигация — колонка 2",
+                    "name": "nav_2",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить ссылку",
+                    "sub_fields": [
+                        {
+                            "key": "field_vm_gen_footer_nav_2_item_text",
+                            "label": "Текст",
+                            "name": "text",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_gen_footer_nav_2_item_url",
+                            "label": "Ссылка",
+                            "name": "url",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "field_vm_gen_footer_hours",
+                    "label": "Часы работы",
+                    "name": "hours",
+                    "type": "text",
+                    "default_value": "Пн-Пт с 10:00 до 19:00",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_gen_footer_address",
+                    "label": "Адрес",
+                    "name": "address",
+                    "type": "textarea",
+                    "default_value": "620028, г. Екатеринбург, ул. Верх-Исетский бульвар",
+                    "rows": 2,
+                    "new_lines": "br"
+                },
+                {
+                    "key": "field_vm_gen_footer_phone",
+                    "label": "Телефон",
+                    "name": "phone",
+                    "type": "text",
+                    "default_value": "+7 (999) 333-29-52",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_gen_footer_youtube",
+                    "label": "YouTube",
+                    "name": "youtube",
+                    "type": "text",
+                    "default_value": "#",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_gen_footer_max",
+                    "label": "MAX",
+                    "name": "max",
+                    "type": "text",
+                    "default_value": "#",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_gen_footer_telegram",
+                    "label": "Telegram",
+                    "name": "telegram",
+                    "type": "text",
+                    "default_value": "#",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_gen_footer_vk",
+                    "label": "ВКонтакте",
+                    "name": "vk",
+                    "type": "text",
+                    "default_value": "#",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_gen_footer_legal",
+                    "label": "Юридические ссылки",
+                    "name": "legal",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить ссылку",
+                    "sub_fields": [
+                        {
+                            "key": "field_vm_gen_footer_legal_text",
+                            "label": "Текст",
+                            "name": "text",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_vm_gen_footer_legal_url",
+                            "label": "Ссылка",
+                            "name": "url",
+                            "type": "text",
+                            "default_value": "",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "field_vm_gen_footer_copyright",
+                    "label": "Копирайт",
+                    "name": "copyright",
+                    "type": "text",
+                    "default_value": "© 2026 Давай вместе. Все права защищены",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_gen_footer_dev",
+                    "label": "Разработка",
+                    "name": "developer",
+                    "type": "text",
+                    "default_value": "Разработка сайта PKDESIGN",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_gen_footer_payments",
+                    "label": "Иконки оплаты",
+                    "name": "payments",
+                    "type": "image",
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "mime_types": "jpg,jpeg,png,webp,svg",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_vm_gen_tab_modals",
+            "label": "Модальные окна",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_vm_gen_modals",
+            "label": "Модальные окна",
+            "name": "modals",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_vm_gen_modals_order_title",
+                    "label": "Заявка — заголовок",
+                    "name": "order_title",
+                    "type": "text",
+                    "default_value": "Оставьте заявку и мы расскажем, чем клуб может быть полезен лично для вас",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_gen_modals_order_submit",
+                    "label": "Заявка — кнопка",
+                    "name": "order_submit",
+                    "type": "text",
+                    "default_value": "Отправить заявку",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_gen_modals_privacy",
+                    "label": "Согласие на обработку ПДн",
+                    "name": "privacy_label",
+                    "type": "wysiwyg",
+                    "default_value": "Я подтверждаю, что ознакомлен (а) с <a href=\"#\">политикой в отношении обработки персональных данных<\/a> и даю своё <a href=\"#\">согласие<\/a> на обработку персональных данных",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0
+                },
+                {
+                    "key": "field_vm_gen_modals_ads",
+                    "label": "Согласие на рассылку",
+                    "name": "ads_label",
+                    "type": "wysiwyg",
+                    "default_value": "Я ознакомлен (а) с <a href=\"#\">политикой рекламной рассылки<\/a> и даю своё <a href=\"#\">согласие<\/a> на рекламную рассылку",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0
+                },
+                {
+                    "key": "field_vm_gen_modals_success_title",
+                    "label": "Успех — заголовок",
+                    "name": "success_title",
+                    "type": "text",
+                    "default_value": "Спасибо!<br>ваша заявка отправлена",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_vm_gen_modals_success_text",
+                    "label": "Успех — текст",
+                    "name": "success_text",
+                    "type": "textarea",
+                    "default_value": "Менеджер свяжется с вами в ближайшее время и расскажет все подробности",
+                    "rows": 2,
+                    "new_lines": "br"
+                }
+            ]
+        },
+        {
+            "key": "field_vm_gen_tab_mail",
+            "label": "Почта",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_vm_gen_mail_from",
+            "label": "Email отправителя",
+            "name": "mail_from",
+            "type": "text",
+            "default_value": "info@example.com",
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_vm_gen_mail_to",
+            "label": "Email получателей",
+            "name": "mail_to",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Добавить email",
+            "sub_fields": [
+                {
+                    "key": "field_vm_gen_mail_to_email",
+                    "label": "Email",
+                    "name": "email",
+                    "type": "text",
+                    "default_value": "",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-mail"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "modified": 1795016232
+}

@@ -624,10 +624,11 @@
         width: max-content;
         max-width: calc(100% - #{r(32)});
         padding: r(10) r(22);
+        padding-bottom: r(15);
         border-radius: r(100);
         font-size: slamp(r(24), r(32));
         font-family: var(--title);
-        line-height: 90%;
+        line-height: 80%;
         text-align: center;
         color: var(--surface);
         backdrop-filter: blur(10px);
